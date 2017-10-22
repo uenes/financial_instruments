@@ -1,22 +1,22 @@
 package br.com.uenes.model;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Instrument {
 	private String name;
-	private Date date;
+	private LocalDate date;
 	private Float value;
 	
-	public Instrument (String name, Date date, Float value) {
+	public Instrument (String name, LocalDate date, Float value) {
 		this.name = name;
 		this.date = date;
 		this.value = value;
 	}
 	
-	public Date getDate() {
+	public LocalDate getDate() {
 		return date;
 	}
-	public void setDate(Date date) {
+	public void setDate(LocalDate date) {
 		this.date = date;
 	}
 	public Float getValue() {
